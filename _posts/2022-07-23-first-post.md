@@ -257,3 +257,87 @@ begin
 end Hello_World;
 ```
 
+### Awk
+```
+awk 'BEGIN {print "Hello World"}'
+```
+
+### OCaml
+```ocaml
+print_string "Hello World"
+```
+
+### Brainfuck
+```
+++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+```
+
+### Whitespace
+
+Space, Tab, Linefeed character is shown with the identifying comment "S","T", or "L respectively".
+
+```
+S S S T	S S T S S S L
+T	L
+S S S S S T	T	S S T	S T	L
+T	L
+S S S S S T	T	S T	T	S S L
+T	L
+S S S S S T	T	S T	T	S S L
+T	L
+S S S S S T	T	S T	T	T	T	L
+T	L
+S S S S S T	S T	T	S S L
+T	L
+S S S S S T	S S S S S L
+T	L
+S S S S S T	T	T	S T	T	T	L
+T	L
+S S S S S T	T	S T	T	T	T	L
+T	L
+S S S S S T	T	T	S S T	S L
+T	L
+S S S S S T	T	S T	T	S S L
+T	L
+S S S S S T	T	S S T	S S L
+T	L
+S S S S S T	S S S S T	L
+T	L
+S S L
+L
+L
+```
+
+Without comments, the code above would look something like this:
+
+```
+           
+  
+              
+  
+              
+  
+              
+  
+                
+  
+            
+  
+           
+  
+                
+  
+                
+  
+               
+  
+              
+  
+              
+  
+            
+  
+  
+
+
+```
