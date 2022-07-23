@@ -459,7 +459,7 @@ endmodule
 ```
 
 ### Piet
-![Piet Hello World](https://en.wikipedia.org/wiki/Esoteric_programming_language#/media/File:Piet_Program_Hello_World.gif)
+![Piet Hello World](https://upload.wikimedia.org/wikipedia/commons/6/6d/Hello_world_piet.png)
 
 ### Notes and Final Thoughts
 * There are a lot of programming languages in this world
