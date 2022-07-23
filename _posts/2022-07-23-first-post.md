@@ -257,7 +257,7 @@ begin
 end Hello_World;
 ```
 
-### Awk
+### awk
 ```
 awk 'BEGIN {print "Hello World"}'
 ```
@@ -269,7 +269,8 @@ print_string "Hello World"
 
 ### Brainfuck
 ```
-++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+++++++++++[>+++++++>++++++++++>+++<<<-]>++.>+.+++++++
+..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.
 ```
 
 ### Whitespace
@@ -345,4 +346,107 @@ Without comments, the code above would look something like this:
 ### R
 ```R
 print("Hello World", quote=FALSE)
+```
+
+### Tcl
+```
+puts "Hello World"
+```
+
+### Rhino
+```javascript
+print("Hello World")
+```
+
+### Cobol
+```
+IDENTIFICATION DIVISION.
+PROGRAM-ID. Hello-world.
+PROCEDURE DIVISION.
+  DISPLAY "Hello World".
+```
+
+### Pike
+```
+int main(){
+  write("Hello World");
+  return 0;
+}
+```
+
+### Sed
+```
+echo "Hello sed" | sed 's/sed/World/'
+```
+
+### INTERCAL
+```
+DO ,1 <- #13
+PLEASE DO ,1 SUB #1 <- #238
+DO ,1 SUB #2 <- #108
+DO ,1 SUB #3 <- #112
+DO ,1 SUB #4 <- #0
+DO ,1 SUB #5 <- #64
+DO ,1 SUB #6 <- #194
+DO ,1 SUB #7 <- #48
+PLEASE DO ,1 SUB #8 <- #22
+DO ,1 SUB #9 <- #248
+DO ,1 SUB #10 <- #168
+DO ,1 SUB #11 <- #24
+DO ,1 SUB #12 <- #16
+DO ,1 SUB #13 <- #162
+PLEASE READ OUT 1,
+PLEASE GIVE UP
+```
+
+### bc
+```
+print "Hello World";
+```
+
+### Algol
+```
+BEGIN DISPLAY("Hello World") END.
+```
+
+### Befunge
+```
+"dlroW olleH"> , v
+             | : <
+             @
+```
+
+### FreeBASIC
+```
+Option Explicit
+Cls
+Print "Hello World"
+Sleep
+End
+```
+
+### Haxe
+```haxe
+class Text{
+  static function main(){
+    trace("Hello World");
+  }
+}
+```
+
+### LOLCODE
+```
+HAI 1.2
+CAN HAS STDIO?
+VISIBLE "HAI WORLD!"
+KTHXBYE
+```
+
+### SystemVerilog
+```verilog
+module test;
+  initial begin
+    $display("Hello World");
+  end
+endmodule
 ```
