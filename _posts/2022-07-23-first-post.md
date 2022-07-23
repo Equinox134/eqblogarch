@@ -131,3 +131,49 @@ void main(){
   writeln("Hello World");
 }
 ```
+
+### PHP
+```php
+echo "Hello World";
+```
+
+### Rust
+```rust
+fn main(){
+  println!("Hello World");
+}
+```
+
+### Scala
+```scala
+object HelloWorld exends App{
+  printIn("Hello World")
+}
+```
+
+### Lua
+```lua
+print("Hello World")
+```
+
+### Perl
+```perl
+print("Hello World");
+```
+
+### F#
+```fsharp
+printfn "Hello World"
+```
+
+### Visual Basic
+```vb6
+Import System
+
+Module Module1
+  Sub Main()
+    Console.WriteLine("Hello World")
+    Console.Readline()
+  End Sub
+End Module
+```
