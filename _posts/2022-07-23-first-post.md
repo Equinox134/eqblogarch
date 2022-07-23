@@ -23,7 +23,109 @@ Currently I don't have anything interesting to post about, but at the same time 
 #include <stdio.h>
 
 int main(){
-  printf("Hello World\n");
+  printf("Hello World");
   return 0;
+}
+```
+
+### C++
+```cpp
+#include <iostream>
+
+int main(){
+  std::cout << "Hello World";
+  return 0;
+}
+```
+
+### C#
+```csharp
+namespace HelloWorld
+{
+  class HW{
+    static void Main(string[] args){
+      System.console.WriteLine("Hello World");
+    }
+  }
+}
+```
+
+### Python
+```python
+print("Hello World")
+```
+
+### Java
+```java
+class HelloWorld{
+  public static void main(String[] args){
+    System.out.println("Hello World");
+  }
+}
+```
+
+### JavaScript
+```javascript
+console.log("Hello World");
+```
+
+### Pascal
+```pascal
+program Hello;
+begin
+  writeln('Hello World');
+  readln;
+end.
+```
+
+### Ruby
+```ruby
+puts 'Hello World'
+```
+
+### Kotlin
+```kotlin
+fun main(args: Array<String>){
+  println("Hello World");
+}
+```
+
+### Swift
+```swift
+println("Hello World");
+```
+
+### Node.js
+```javascript
+var http = require('http');
+
+http.createServer(function (req,res){
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end('Hello World');
+}).listen(8080);
+```
+
+### Text
+```
+Hello World
+```
+
+### Go
+```go
+package main
+
+import "fmt"
+
+func main(){
+  fmt.Println("Hello World")
+}
+```
+
+### D
+```d
+import std.stdio;
+
+void main(){
+  writeln("Hello World");
 }
 ```
