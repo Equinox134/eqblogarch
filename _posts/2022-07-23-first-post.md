@@ -167,7 +167,7 @@ printfn "Hello World"
 ```
 
 ### Visual Basic
-```visual basic 6
+```
 Import System
 
 Module Module1
