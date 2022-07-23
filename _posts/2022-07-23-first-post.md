@@ -92,6 +92,13 @@ fun main(args: Array<String>){
 }
 ```
 
+### Haskel
+```runghc
+module Main where
+
+main = putStrLn "Hello World"
+```
+
 ### Swift
 ```swift
 println("Hello World");
