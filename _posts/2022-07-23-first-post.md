@@ -19,11 +19,11 @@ Here are a few things I want to mention:
 Currently I don't have anything interesting to post about, but at the same time want to write something, so I'll just show Hello World written in multiple differnt languages, in no particular order(I'll keep adding more if I fell like it).
 
 ### C
-'''c
+```c
 #include <stdio.h>
 
 int main(){
   printf("Hello World\n");
   return 0;
 }
-'''
+```
