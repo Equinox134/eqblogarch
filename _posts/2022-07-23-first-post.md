@@ -17,3 +17,13 @@ Here are a few things I want to mention:
 * English is not my native language, and there could be multiple grammatical errors. Please ignore for the tume being.
 
 Currently I don't have anything interesting to post about, but at the same time want to write something, so I'll just show Hello World written in multiple differnt languages, in no particular order(I'll keep adding more if I fell like it).
+
+### C
+'''c
+#include <stdio.h>
+
+int main(){
+  printf("Hello World\n");
+  return 0;
+}
+'''
