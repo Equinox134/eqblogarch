@@ -167,7 +167,7 @@ printfn "Hello World"
 ```
 
 ### Visual Basic
-```vb6
+```visual basic
 Import System
 
 Module Module1
@@ -207,7 +207,7 @@ console.log('Hello World');
 ```
 
 ### Assembly
-```assembly_x86
+```
 global _start
 
 section .text
