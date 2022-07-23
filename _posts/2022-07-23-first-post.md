@@ -177,3 +177,53 @@ Module Module1
   End Sub
 End Module
 ```
+
+### Objective-C
+```objc
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char * argv[]){
+    NSLog(@"Hello World");
+}
+```
+
+### Objective-C++
+```objc++
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char * argv[]){
+    NSLog(@"Hello World");
+}
+```
+
+### Golfscript
+```
+'Hello World'
+```
+
+### TypeScript
+```javascript
+console.log('Hello World');
+```
+
+### Assembly
+```assembly_x86
+global _start
+
+section .text
+
+_start:
+  mov rax, 1      ; write(
+  mov rdi, 1      ;   STDOUT_FILENO,
+  mov rsi, msg    ;   "Hello World",
+  mov rdx, msglen ;   sizeof("Hello World")
+  syscall         ; );
+  
+  mov rax, 60     ; exit(
+  mov rdi, 0      ;   EXIT_SUCCESS
+  syscall         ; );
+
+sectio .rodata
+  msg: db "Hello World", 10
+  msglen: equ $ - msg
+```
