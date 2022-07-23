@@ -248,7 +248,7 @@ end program helloworld
 ```
 
 ### Ada
-```ada95
+```
 with Ada.Text_IO;
 
 procedure Hello_World is
