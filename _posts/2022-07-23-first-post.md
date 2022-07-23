@@ -450,3 +450,8 @@ module test;
   end
 endmodule
 ```
+
+### Notes and Final Thoughts
+* There are a lot of programming languages in this world
+* LOLCODE should be more well known and people should use it more often
+* Never write in whitespace ever again
