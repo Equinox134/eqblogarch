@@ -92,8 +92,8 @@ fun main(args: Array<String>){
 }
 ```
 
-### Haskel
-```runghc
+### Haskell
+```haskell
 module Main where
 
 main = putStrLn "Hello World"
