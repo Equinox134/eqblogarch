@@ -9,6 +9,8 @@ comments: true
 This is the first post of this blog.
 
 <!--more-->
+### Introduction
+
 So I created blog using GitHub Pages. My plan is to use this blog as a place to write about topics that I studied/learned about, and other random stuff.
 Most of the time I'll probably post stuff related to computer science and math, but I can't be sure.
 
