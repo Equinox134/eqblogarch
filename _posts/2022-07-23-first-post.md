@@ -227,3 +227,33 @@ sectio .rodata
   msg: db "Hello World", 10
   msglen: equ $ - msg
 ```
+
+### Bash
+```
+echo "Hello World"
+```
+
+### Fortran
+```
+program helloworld
+  print *, "Hello World"
+end program helloworld
+```
+
+### Scheme
+```scheme
+(begin
+  (display "Hello World")
+  (newline))
+```
+
+### Ada
+```ada95
+with Ada.Text_IO;
+
+procedure Hello_World is
+begin
+  Ada.Text_IO.Put_Line ("Hello World");
+end Hello_World;
+```
+
