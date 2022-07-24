@@ -64,6 +64,8 @@ First, node u is marked as visited using the visited array. Then node u is pushe
 Within the for loop, the if statement checks if each of the adjacent nodes of node u have been visited. If the next node hasn't been visited,
 we continue searching from the next node using recursion.
 
+The time complexity of the code above is $O(V+E)$.
+
 ### Uses (DFS Spanning Tree)
 
 There are many places where a DFS algorithm can be used. Here, I want to look at one use of the DFS algorithm; the DFS spanning tree.
@@ -152,6 +154,15 @@ Now that were done with depth-first search (which turned out longer than I expec
 
 ## Breadth-First Search
 
-BFS is like DFS, 
+BFS is like DFS, but instead of going as deep as possible, it explores all of the nodes at the current depth, before moving on to the next depth level.
+In a BFS algorithm, a queue is usually required to keep track of child nodes that have been encountered, but not visited.
+
+### Example
+
+![bfs ex][graph]
+
+Lets do a breadth-first search on the graph above, starting at node A, and assuming that nodes on the left are explored before nodes on the right.
+
+* 
 
 [graph]: https://raw.githubusercontent.com/Equinox134/equinox134.github.io/master/assets/images/logo/2022-07-24-dfs-and-bfs/graph.png
