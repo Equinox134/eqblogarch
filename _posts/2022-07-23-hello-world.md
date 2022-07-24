@@ -5,7 +5,7 @@ tags:
  - Random
 ---
 
-This is the first post of this blog.
+This is the first official post of this blog.
 
 <!--more-->
 ### Introduction
