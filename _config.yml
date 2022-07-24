@@ -35,8 +35,8 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : Equinox134
-  url       :
+  name      : "Equinox134"
+  url       : "https://equinox134.githun.io"
   avatar    : # path or url of avatar image (square)
   bio       : Nothing special about me
   email     :
@@ -55,7 +55,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: Equinox134/equinox.github.io
 repository_tree: master
 
 
@@ -207,7 +207,7 @@ defaults:
       type: posts
     values:
       layout: article
-      sharing: true
+      sharing: false
       license: false
       aside:
         toc: true
