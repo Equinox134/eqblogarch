@@ -211,8 +211,6 @@ defaults:
       license: false
       aside:
         toc: true
-      sidebar:
-        nav: layouts
       show_edit_on_github: false
       show_subscribe: false
       pageview: true
