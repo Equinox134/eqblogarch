@@ -51,7 +51,6 @@ void dfs(int u){
 ```
 
 Variable explanation:
-
 * graph: The adjacency list of the graph
 * visited: A boolean array that keeps track of nodes that have been previously visited
 * traversal: A vector that stores the nodes in the order they were traversed
@@ -59,13 +58,13 @@ Variable explanation:
 * u: The node that is currently being searched
 * next: The node that is going to be searched next
 
-Code explanation:
+Simple code explanation:
 
 First, node u is marked as visited using the visited array. Then node u is pushed into the traversal vector.
 Within the for loop, the if statement checks if each of the adjacent nodes of node u have been visited. If the next node hasn't been visited,
 we continue searching from the next node using recursion.
 
-### Uses
+### Uses (DFS Spanning Tree)
 
 There are many places where a DFS algorithm can be used. Here, I want to look at one use of the DFS algorithm; the DFS spanning tree.
 
@@ -85,5 +84,74 @@ Tree edges, back edges, and forward edges are represented using the colors black
 
 ![dfs spanning tree](https://raw.githubusercontent.com/Equinox134/equinox134.github.io/master/assets/images/logo/2022-07-24-dfs-and-bfs/dfs%20spanning%20tree.png)
 
+The following C++ code shows what type each edge is when inputed an edge list.
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<int> graph[1000];
+vector<int> discovered, finished;
+int counter;
+
+void DFS(int node)
+{
+    discovered[node] = counter++;
+
+    for (int i = 0; i < graph[node].size(); ++i) {
+        int next = graph[node][i];
+        cout << "(" << node << "," << next << "): ";
+
+        if (discovered[next] == -1) {
+            cout << "tree edge" << endl;
+            DFS(next);
+        }
+        else if (discovered[node] < discovered[next])
+            cout << "forward edge" << endl;
+        else if (finished[next] == 0)
+            cout << "back edge" << endl;
+        else
+            cout << "cross edge" << endl;
+    }
+    finished[node] = 1;
+}
+
+int main(){
+	int v,e,root;
+	cin >> v >> e;
+	discovered.resize(v+1);
+	finished.resize(v+1);
+	for(int i=0;i<e;i++){
+		int a,b;
+		cin >> a >> b;
+		graph[a].push_back(b);
+		//graph[b].push_back(a); //Uncommenting this line makes the inputed graph into a undirected graph
+	}
+	fill(discovered.begin(),discovered.end(),-1);
+  cin >> root;
+	DFS(root);
+}
+```
+Variable explanation:
+* graph: The adjacency list of the graph
+* discovered: A vector that stores the order of when a node was visited, initialy set to -1
+* finished: A vector that keeps track of whether a node has finished searching
+* counter: The current order of the node visited
+* v: The number of nodes in the graph
+* e: The number of edges in the graph
+* root: The node where the search starts
+
+Simple code explanation:
+
+Within the DFS function, if discovered[next] == -1, it means we never visited before, so the corresponding edge will be a tree edge. If discovered[next] is larger 
+than discovered[node] it means that next is a decendant of node as it has been visited later, thus making the node a forward node. If discovered[next] is smaller,
+the edge will be a back edge if next is not finished searching, thus finished[next] == 0. Otherwise, the edge would be a cross edge.
+
+Now that were done with depth-first search (which turned out longer than I expected), lets move on to breadth-first search.
+
+## Breadth-First Search
+
+BFS is like DFS, 
 
 [graph]: https://raw.githubusercontent.com/Equinox134/equinox134.github.io/master/assets/images/logo/2022-07-24-dfs-and-bfs/graph.png
