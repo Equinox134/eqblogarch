@@ -3,7 +3,6 @@ title: Hello World
 tags:
  - Test
  - Random
-comments: true
 ---
 
 This is the first post of this blog.
