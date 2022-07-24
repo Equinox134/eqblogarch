@@ -55,6 +55,7 @@ Variable explanation:
 * graph: The adjacency list of the graph
 * visited: A boolean array that keeps track of nodes that have been previously visited
 * traversal: A vector that stores the nodes in the order they were traversed
+* V: The number of nodes in the graph
 * u: The node that is currently being searched
 * next: The node that is going to be searched next
 
@@ -63,6 +64,26 @@ Code explanation:
 First, node u is marked as visited using the visited array. Then node u is pushed into the traversal vector.
 Within the for loop, the if statement checks if each of the adjacent nodes of node u have been visited. If the next node hasn't been visited,
 we continue searching from the next node using recursion.
+
+### Uses
+
+There are many places where a DFS algorithm can be used. Here, I want to look at one use of the DFS algorithm; the DFS spanning tree.
+
+A DFS spanning tree is a tree where the root node is the node where the DFS starts at. The shape of the tree can differ based on the order of traversal.
+
+Each edge of a graph can be put into one of four groups: forward edges, back edges, cross edges, and tree edges. What group each edge belongs to 
+is based on the spanning tree.
+
+Here are the descriptions for each group:
+* Tree edge: An edge that is part of the spanning tree. If a node V has been first visited using an edge (U, V), (U, V) is a tree edge.
+* Back edge: An edge that points to from a node to one of its ancestors. Back edges have the property of being included within a cycle in the original graph.
+* Forward edge: An edge that points from a node of a tree to one of its decendants that is not contained in the spanning tree.
+* Cross edge: An edge which is neither of the above.
+
+The following image shows the types of edge defined by the spanning tree of the graph we looked at before.
+Tree edges, back edges, and forward edges are represented using the colors black, red, and blue. As for cross edges, there exists none.
+
+![dfs spanning tree](https://raw.githubusercontent.com/Equinox134/equinox134.github.io/master/assets/images/logo/2022-07-24-dfs-and-bfs/dfs%20spanning%20tree.png)
 
 
 [graph]: https://raw.githubusercontent.com/Equinox134/equinox134.github.io/master/assets/images/logo/2022-07-24-dfs-and-bfs/graph.png
