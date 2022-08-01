@@ -45,7 +45,7 @@ void DFS(int u){
   for(int i = 0; i < graph[u].size(); i++){
     int next = graph[u][i];
     if(visited[next] == false)
-      dfs(next);
+      DFS(next);
   }
 }
 ```
