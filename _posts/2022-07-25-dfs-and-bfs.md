@@ -3,6 +3,7 @@ title: DFS and BFS
 tags:
  - Algorithm
  - Graph Algorithm
+math: true
 ---
 
 Depth-first search (DFS) and breadth-first search (BFS) are both algorithms used for traversing or searching graphs.
