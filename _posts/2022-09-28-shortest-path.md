@@ -206,8 +206,7 @@ The time complexity of this algorithm is $O(VE)$, where E is the number of edges
 ## Floyd-Warshall Algorithm
 
 The Floyd-Warshall algorithm, unlike the previous algorithms, is an algorithm that finds the shortest path from every starting node to every end node. 
-The way the Floyd-Warshall algorithm works is by looping through all pairs of start and end nodes(lets call them S and E), then choosing a third node(lets call it K), 
-then updating the distance from S to E if dist(S,E) > dist(S,K) + dist(K,E)(where dist(A,B) is the distance from node A to node B).
+The way the Floyd-Warshall algorithm works is by looping through all pairs of start and end nodes(lets call them $S$ and $E$), then choosing a third node(lets call it $K$), then updating the distance from $S$ to $E$ if $dist(S,E) > dist(S,K) + dist(K,E)$(where $dist(A,B)$ is the distance from node $A$ to node $B$).
 
 ### Implementation
 
