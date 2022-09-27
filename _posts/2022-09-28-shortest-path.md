@@ -14,12 +14,12 @@ The shortest path problem is(as the name suggests) a problem where you have to f
 While there are many algorithms for finding the shortest path in a graph, here I want to introduce 4 of them; BFS, Dijkstra's algorithm, Bellman-Ford algorithm, 
 and Floyd-Warshall algorithm.
 
-##BFS
+## BFS
 
 BFS is the (what I think) the simplest way to find the shortest path. However, it can only be used if the graph doesn't have any weights. 
 There is a variation of the standard BFS known as 0-1 BFS, which can be used on graphs where the weights are either 0 or 1, but that's not explained here.
 
-###Implementation
+### Implementation
 
 The following is an implementation of a function that returns the length of the shortest path in a given graph(-1 if unreachable).
 
@@ -58,7 +58,7 @@ The time complexity of the algorithm is $O(V+E)$, because it's just a BFS search
 
 While BFS is simple and easy to implement, a lot of graphs have weights. Now lets look at algorithms that are used in weighted graphs.
 
-##Dijkstra's Algorithm
+## Dijkstra's Algorithm
 
 Dijkstra's algorithm is an algorithm that can find the shortest path in a graph with weights. The only restraint is that all the weights must be positive.
 
@@ -71,7 +71,7 @@ current node $A$, and the weight of the edge between the two nodes $W$, the dist
 2. Mark the current node visited. This means we never change the distance of this node again.
 3. Choose the neighbour nodes with the shortest distance, and make that node the current node.
 
-###Implementation - 1
+### Implementation - 1
 
 The following is an implementation of Dijkstra's algorithm.
 
@@ -118,7 +118,7 @@ void Dijkstra(int start){
 
 The code takes $O(V)$ time to find the closest node, and since this is repeated V times, the total time complexity would be $O(V^2)$.
 
-###Using a Priority Queue
+### Using a Priority Queue
 
 Rather than looping V times to find the closest node, we can make use of a priority queue ans find it in $O(logV)$ time.
 
@@ -128,7 +128,7 @@ The algorithm starts by reseting the distance to all nodes to infinity, except t
 If cost is larger than the current distance to now, we ignore/continue.
 2. Otherwise, we relax the distance to all neighbouring nodes of now. If the distance is updated, we insert a pair {distance,node} into the priority queue.
 
-###Implementation - 2
+### Implementation - 2
 
 The following is an implementation of Dijkstra's algorithm using a priority queue. Note that the code uses a max heap(since the syntax is shorter), and so we multiply 
 -1 to the distance whenever a new pair is being inserted. This way, the pair with a smaller distance would be at front.
@@ -166,7 +166,7 @@ If you use a min heap in while implementing the code above, there is no need to 
 The time complexity of this algorithm is $O(ElogV)$, where E is the number of edges, because a total of E edges are pushed into the priority queue, 
 and it takes $O(logV)$ time to find the closest node.
 
-##Bellman-Ford Algorithm
+## Bellman-Ford Algorithm
 
 The Bellman-Ford algorithm, like Dijkstra's algorithm, is an algorithm that finds the shortest path from one node to all other nodes. Unlike Dijkstra's algorithm, 
 however, the Bellman-Ford algorithm can be used on graphs that have negative weights, and can be used to find whether a graph contains a negative cycle.
@@ -174,7 +174,7 @@ however, the Bellman-Ford algorithm can be used on graphs that have negative wei
 Similar to Dijkstra's algorithm, the Bellman-Ford algorithm also proceeds by relaxation. The difference is, while Dijkstra's algorithm greedily selected the nodes to 
 relax, the Bellman-Ford algorithm simply relaxes all edges, and repeats this $V-1$ times, where $V$ is the number of nodes.
 
-###Implementation
+### Implementation
 
 The following is an implementation of the Bellman-Ford algorithm.
 
@@ -203,13 +203,13 @@ once more. During the relaxation process, if a distance is updated, this means t
 
 The time complexity of this algorithm is $O(VE)$, where E is the number of edges.
 
-##Floyd-Warshall Algorithm
+## Floyd-Warshall Algorithm
 
 The Floyd-Warshall algorithm, unlike the previous algorithms, is an algorithm that finds the shortest path from every starting node to every end node. 
 The way the Floyd-Warshall algorithm works is by looping through all pairs of start and end nodes(lets call them S and E), then choosing a third node(lets call it K), 
 then updating the distance from S to E if dist(S,E) > dist(S,K) + dist(K,E)(where dist(A,B) is the distance from node A to node B).
 
-###Implementation
+### Implementation
 
 The following is an implementation of the Floyd-Warshall algorithm.
 
@@ -235,6 +235,6 @@ One thing to note in the implementation is that the loops in order of passing po
 
 The time complexity of the code is $O(V^3)$.
 
-##Conclusion
+## Conclusion
 
 So those were the algorithms I wanted to talk about here. There are more, but those should be enough to solve most problems related to shortest paths.
