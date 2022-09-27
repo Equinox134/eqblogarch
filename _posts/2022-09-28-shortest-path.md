@@ -10,6 +10,8 @@ This post explains most of the major algorithms for finding the shortest path in
 
 <!--more-->
 
+## Introduction
+
 The shortest path problem is(as the name suggests) a problem where you have to find the shortest path from one node to another in a graph. 
 While there are many algorithms for finding the shortest path in a graph, here I want to introduce 4 of them; BFS, Dijkstra's algorithm, Bellman-Ford algorithm, 
 and Floyd-Warshall algorithm.
