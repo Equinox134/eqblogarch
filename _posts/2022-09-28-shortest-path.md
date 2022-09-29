@@ -146,7 +146,7 @@ void Dijkstra(int start){
   pq.push({0,start}); dist[start] = 0;
   
   while(!pq.empty()){
-    int now = pq.top().second, -cost = pq.top().first; //because we multiply -1 whenever we push, we should multiply -1 when we pop
+    int now = pq.top().second, -cost = pq.top().first; //multiply -1 whenever pushed, multiply -1 when we pop
     pq.pop();
     
     //if the distance is longer, ignore
