@@ -283,7 +283,7 @@ print_string "Hello World"
 
 ### Whitespace
 
-Space, Tab, Linefeed character is shown with the identifying comment "S","T", or "L respectively".
+Space, Tab, Linefeed character is shown with the identifying comment "S","T", or "L" respectively.
 
 ```
 S S S T	S S T S S S L
