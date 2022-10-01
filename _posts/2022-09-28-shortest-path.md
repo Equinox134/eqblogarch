@@ -4,10 +4,8 @@ tags:
  - Algorithm
  - Graph Algorithm
 math: true
+excerpt: Explenation of algorithms for finding the shortest path
 ---
-
-This post explains most of the major algorithms for finding the shortest path in a graph
-
 <!--more-->
 
 ## Introduction
